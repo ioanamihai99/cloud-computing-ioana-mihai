@@ -1,4 +1,6 @@
 // js/components/InsertPage.jsx
+import * as http from "http";
+
 export default function InsertPage() {
     const insertRecord = (event) => {
         event.preventDefault();
@@ -16,6 +18,8 @@ export default function InsertPage() {
             document.getElementById("nume").value = "";
             document.getElementById("prenume").value = "";
         });
+        window.open('http://localhost:3000/');
+        window.close();
     }
 
     return (

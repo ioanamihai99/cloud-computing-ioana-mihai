@@ -71,21 +71,30 @@ function ChatComponent(props) {
             }
         }
     }
+    const gotomainpage = (event) => {
+        window.open('http://localhost:3000/');
+        window.close();
+    }
 
     return (
         <div className={"w-full max-w-[1500px] mx-auto my-10"}>
-            <div className={"border border-b-0 rounded-lg border-gray-300'"}>
+            <div className={"border border-b-0 rounded-lg border-red-500'"}>
                 <div className={'border-b text-center px-[20px] py-[10px]'}>
-					<span className={'text-md font-bold text-gray-900'}>
-						This a chat component that looks like Yahoo!
+					<span className={'text-md font-bold text-red-500'}>
+						You can ask something about manicure and pedicure!
 					</span>
+
                 </div>
+                <button type="button"
+                        onClick={gotomainpage}
+                        className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Go back to the main page
+                </button>
                 <MessageBox chatMessages={chatMessages}/>
             </div>
             <input
                 id={'chat-input'}
                 type={'text'}
-                className="bg-gray-50 border border-gray-300 border-x-0 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4"
+                className="bg-pink-300 border border-red-500 border-x-0 text-red-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4"
                 placeholder="Type something..."
                 onKeyDown={handleKeyDown}
             />

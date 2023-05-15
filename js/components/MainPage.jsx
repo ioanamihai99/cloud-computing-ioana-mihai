@@ -33,13 +33,29 @@ export default function MainPage() {
             console.log(error);
         }
     }
+    const gotoinsertpage = (event) => {
+        window.open('http://localhost:3000/insert');
+        window.close();
+    }
+    const gotochatpage = (event) => {
+        window.open('http://localhost:3000/chat');
+        window.close();
+    }
     return (
 
         <section className="bg-red-300 dark:bg-blue-500">
             <div className="container px-6 py-10 mx-auto">
                 <h1 className="  w-[1000px] mx-auto  font-bold text-center text-3xl text-pink-700">Nail Technician Feedback</h1>
+                <button type="button"
+                        onClick={gotoinsertpage}
+                        className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Give feedback
+                </button>
                 <p className="  w-[1000px] mx-auto text-center mt-4 text-2xl text-pink-900">Hello girls! My name is Ioana and this is my work seen through my customers eyes. Enjoy! :)</p>
 
+                <button type="button"
+                        onClick={gotochatpage}
+                        className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">ChatGPT
+                </button>
                 <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3">
                     {records.map(record => (
                           <div  key={record._id}
