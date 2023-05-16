@@ -1,38 +1,57 @@
-MIHAI IOANA
+MIHAI IOANA Grupa 1120 SIMPRE
 
 ## Aplicatie Web Nail Technician
 
-First, run the development server:
+Link video: [https://youtu.be/NWAg3gz_N40](https://youtu.be/NWAg3gz_N40)
+<br>
+Link GIT: [https://github.com/ioanamihai99/cloud-computing-ioana-mihai](https://github.com/ioanamihai99/cloud-computing-ioana-mihai)
+<br>
+Link aplicatie: [https://cloud-computing-ioana-mihai-muvoc6cyz-ioanamihai99.vercel.app/](https://cloud-computing-ioana-mihai-muvoc6cyz-ioanamihai99.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introducere
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+S-a realizat crearea unei aplicații web pentru a vizualiza și a acorda feedback pentru un tehnician de unghii.
+Această aplicație utilizeaza 3 servicii în cloud prin intermediul unui API REST.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Descriere problema
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Există tot mai mulți tehnicieni de unghii particulari iar industria cosmetizării a luat amploare în ultimii ani.
+Pentru a avea transparență și sinceritate, este necesară crearea unei aplicații în cadrul căreia să poți vizualiza dar și acorda feedback după vizitele la manichiură și pedichiură. 
+<br>
+<br>
+Astfel, ceilalți clienți sau potențialii clienți pot vedea părerile persoanelor ce deja au experimentat o programare, prețuri și diverse alte informații.
+De asemenea, includerea unui asistent inteligent într-o astfel de aplicație aduce un plus de valoare întrucât clienții pot avea curiozități referitoare la estetica unghiilor, la procesele ce se desfășoară în cadrul unei programări și cu ajutorul unui ChatGpt pot să le afle independent.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Descriere API
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+•	MongoDB
+<br>
+API-ul de date MongoDB Atlas este un serviciu gestionat care vă permite să lucrați în siguranță cu datele stocate în Atlas folosind solicitări HTTPS standard. Data API nu este o conexiune directă la baza de date. În schimb, API-ul este un serviciu middleware complet gestionat, care se află între clusterul dvs. și clienții care trimit solicitări.
+<br>
+<br>
+•	Vercel 
+<br>
+Vercel REST API le permite dezvoltatorilor să interacționeze programatic cu contul și serviciile lor Vercel folosind solicitări HTTP. Cu ajutorul API-ului, dezvoltatorii pot implementa versiuni noi de aplicații web, pot gestiona domenii personalizate, pot prelua informații despre implementări și pot gestiona secretele și variabilele de mediu pentru proiecte.
+<br>
+<br>
+•	ChatGTP
+<br>
+Chat GPT API este un produs al Open AI, o companie specializată în cercetare și dezvoltare AI. Este un API bazat pe cloud care oferă acces la modelele de limbaj avansate ale Open AI, inclusiv GPT-3 și GPT-4
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Flux de date
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Flux](./fluxdedate.png)
+<br>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Capturi de ecran
+
+![CapturaApp](./captura1.png)
+<br>
+![CapturaApp](./ecran3.png)
+<br>
+![CapturaApp](./ecran4.png)
+
